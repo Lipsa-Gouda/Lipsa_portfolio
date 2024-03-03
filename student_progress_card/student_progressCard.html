@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            /* height: 5px;
+            width: 400px; */
+            border: 1px solid #fff;
+            text-align: center;
+            border: 2px solid green;
+            padding: 20px;
+            font-size: large;
+            font-weight: bold;
+            
+
+        }
+        li{
+            height: 20px;
+            width: 400px;
+            border: 2px solid;
+            margin: 10px;
+             padding: 10px;
+            list-style: none;
+        }
+        ul{
+            border: 2px solid;
+            height: 400px;
+            width: 500px;
+            margin: 20px auto;
+            padding:20px;
+            background-color:#fff;
+        }
+        .studentMarkes >input
+        {
+            height: 20px;
+            width: 20px;
+            border: 1px solid;
+        }
+         #displayblock
+         {
+            display: none;
+         }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li class ="title">
+            student progress card
+        </li>
+        <li class>
+            <label >sname</label>
+            <input type ="text" id="sname">
+
+        </li>
+        <li >
+            <label >Age</label>
+            <input type ="text" id="sage">
+        </li>
+        <li>
+            <label>Gender: </label>
+            Male <input type="radio" name="gender" value="Male" checked>
+            Female <input type="radio" name="gender" value="Female">
+        </li>
+        <li >
+            <label for ="">class</label>
+            <select name="" id = "studentclass" >
+                <option value = "class I">class I</option>
+                <option value = "class II">class II</option>
+                <option value = "class III">class IV</option>
+                <option value = "class V">class V</option>
+
+
+            </select>
+        </li>
+        <li class ="studentMarkes">
+            <label>markes:</label>
+            <input type ="text" id ="m1">
+            <input type ="text" id ="m2">
+            <input type ="text" id ="m3">
+            <input type ="text" id ="m4">
+            <input type ="text" id ="m5">
+ 
+        </li>
+        <li>
+            <input type ="button" value ="generate progress card" onclick="generatePrgressCard()">
+            <input type="button" value ="reset field">
+        </li>
+        
+    </ul>
+   <div class="progressCardHolder"></div>
+   <ul id="displayblock">
+     <li  >
+        student name:<span id="s_name"></span>
+         
+     </li>
+     <li>
+        student age:<span id="s_age"></span>
+
+     </li>
+     <li>
+        gender:<span id="s_gender"></span>
+     </li>
+     <li>
+        class:<span id="s_class"></span>
+     </li>
+     <li>
+        avg:<span id="s_avg"></span>
+
+     </li>
+     <li>
+        grade:<span id="s_grade"></span>
+     </li>
+   </ul>
+   <script src ="studentProgressCard.js"></script>
+
+   
+</body>
+</html>
